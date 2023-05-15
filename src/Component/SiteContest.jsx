@@ -17,9 +17,7 @@ import { format } from "date-fns";
 const SideContest = () => {
   const dispatch = useDispatch();
   const contestList = useSelector((state) => state.contestList);
-  console.log(contestList);
   const { contests, loading, error} = contestList;
-  console.log(contests, error, loading);
 
   const getSiteName=(val)=>{
     const ans=val.replace('_','');

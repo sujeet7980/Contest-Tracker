@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   MDBCard,
   MDBCardImage,
@@ -17,9 +17,7 @@ import { format } from "date-fns";
 const Home = () => {
   const dispatch = useDispatch();
   const contestList = useSelector((state) => state.contestList);
-  console.log(contestList);
   const { contests, loading, error } = contestList;
-  console.log(contests, error, loading);
   const formatDate = (sec) => {
     sec = Number(sec);
     var y = Math.floor(sec / 31536000); //<<years
