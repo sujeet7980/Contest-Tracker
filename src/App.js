@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Component/Home";
 import SiteContest from "./Component/SiteContest";
 import { Container ,Row,Col} from "react-bootstrap";
-import Form from "./Component/Form";
 
 function App() {
   return (
