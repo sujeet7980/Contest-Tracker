@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import {
   MDBCard,
   MDBCardImage,
@@ -10,7 +10,7 @@ import {
 import Loader from "./Loader";
 import Message from "./Message";
 import { useDispatch, useSelector } from "react-redux";
-import {  siteContests, userDetails } from "../actions/contestActions";
+import {  siteContests } from "../actions/contestActions";
 import { Link, useParams } from "react-router-dom";
 import { Table } from "react-bootstrap";
 import { format } from "date-fns";

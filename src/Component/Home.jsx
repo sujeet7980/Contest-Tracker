@@ -13,14 +13,13 @@ import { useDispatch, useSelector } from "react-redux";
 import { listContests } from "../actions/contestActions";
 import { Link } from "react-router-dom";
 import { Table } from "react-bootstrap";
-import { format, formatDistanceToNowStrict } from "date-fns";
+import { format } from "date-fns";
 const Home = () => {
   const dispatch = useDispatch();
   const contestList = useSelector((state) => state.contestList);
   console.log(contestList);
   const { contests, loading, error } = contestList;
   console.log(contests, error, loading);
-  let [updatetime, setUpdatetime] = useState(0);
   const formatDate = (sec) => {
     sec = Number(sec);
     var y = Math.floor(sec / 31536000); //<<years
